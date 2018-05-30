@@ -1,7 +1,7 @@
 # Distributed System Project
-All code are written by me, please contact me if you want to make revision.
+All code is written by me, please contact me if you want to make any revision or academic use.
 
-1. 
+========================================================
 Distributed Systems
 COMP90015 2017 SM1
 Project 1 - EZShare
@@ -19,7 +19,7 @@ just references (URIs) to e.g. web pages.
 Every published resource (including shared files) has an optional owner and channel to which it belongs.
 These things allow resources to be controlled, e.g. not all shared resources have to be available to the public.
 
-2. 
+=========================================================
 Distributed Systems
 COMP90015 2017 SM1
 Project 2 - Security and Subscribing
@@ -37,20 +37,20 @@ For the security aspect you will make use of certificates and secure sockets as 
 
 
 
-=====================================================Project 1==========================================================
-arguments for Server
+==========================Project 1============================
+Arguments for Server
 
 -debug
 
 -port 8070 -debug
 
 
-=========================================================================================================================
-some arguments for Client:
+================================================================
+Some arguments for Client:
 
 -exchange -servers localhost:8070 -debug
 
-1.publish--------------------------------------------------------------------------------------------------------------------
+1.publish-------------------------------------------------------
 
 -publish -name "Baidu" -description "A search tool" -uri http://www.baidu.com -debug
 
@@ -58,7 +58,7 @@ some arguments for Client:
 
 -publish -owner "frankie" -description "MUST website" -uri http://www.must.edu.mo -debug
 
-2.remove and query---------------------------------------------------------------------------------------------------------------
+2.remove and query----------------------------------------------
 
 -publish -uri http://www.must.edu.mo -debug
 
@@ -68,19 +68,19 @@ some arguments for Client:
 
 -query -debug
 
-3.exchange (port 8080 with 8070)-------------------------------------------------------------------------------------------------
+3.exchange (port 8080 with 8070)---------------------------------
 
 -exchange -servers localhost:8070,sunrise.cis.unimelb.edu.au:3780 -debug
 
 -query -debug
 
-4.share and fetch (from local server)---------------------------------------------------------------------------------------------
+4.share and fetch (from local server)-----------------------------
 
 -share -name "frankiephoto" -description "A photo of Frankie" -uri file:///C:/Users/frankie/Desktop/test.jpg -tags jpg -secret whoami -debug
 
 -fetch -uri file:///C:/Users/frankie/Desktop/test.jpg -debug
 
-5.query and fetch from a remote server------------------------------------------------------------------------------------------
+5.query and fetch from a remote server-----------------------------
 
 -query -host "sunrise.cis.unimelb.edu.au" -port 3780 -debug
 
@@ -89,7 +89,7 @@ some arguments for Client:
 
 
 
-===================================================project 2=========================================================
+=======================project 2=====================
 
 
 -publish -owner "frankie" -description "MUST website" -uri http://www.must.edu.mo -debug -secure
