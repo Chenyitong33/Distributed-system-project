@@ -1,2 +1,3 @@
-# Distributed-system-project
-Unimelb course
+# Distributed System Project
+1. 
+2. 
